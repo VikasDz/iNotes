@@ -1,6 +1,5 @@
 package com.t.inotes;
 
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -28,7 +27,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import com.t.inotes.databinding.ActivityMainBinding;
-
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
