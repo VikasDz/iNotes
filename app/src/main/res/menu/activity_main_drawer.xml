@@ -16,11 +16,15 @@
         <item
             android:id="@+id/nav_code"
             android:icon="@drawable/ic_baseline_code_24"
-            android:title="Source Code" />
+            android:title="Code Compiler" />
         <item
             android:id="@+id/nav_practiceset"
             android:icon="@drawable/ic_baseline_question_answer_24"
             android:title="Practice Set" />
+        <item
+            android:id="@+id/nav_sourcecode"
+            android:icon="@drawable/ic_baseline_code_24"
+            android:title="Download Source Code" />
         <item
             android:id="@+id/sharebtn"
             android:icon="@drawable/ic_baseline_share_24"
@@ -37,9 +41,9 @@
                 android:icon="@drawable/instagram"
                 android:title="Instagram"/>
             <item
-                android:id="@+id/nav_contactus"
-                android:icon="@drawable/twitter"
-                android:title="Twitter"/>
+                android:id="@+id/nav_github"
+                android:icon="@drawable/gi"
+                android:title="GitHub"/>
         </menu>
     </item>
 </menu>

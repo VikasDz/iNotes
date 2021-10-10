@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mus"
+    android:background="@drawable/music_on"
     tools:context=".playmusic">
     <ImageView
         android:id="@+id/imageView2"
@@ -19,9 +19,9 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="432dp"
+        android:layout_width="389dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
         android:ellipsize="marquee"
         android:fadingEdge="horizontal"
         android:fontFamily="@font/antic"
@@ -30,7 +30,7 @@
         android:scrollHorizontally="true"
         android:singleLine="true"
         android:text="TextView"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,9 +72,9 @@
 
     <SeekBar
         android:id="@+id/seekBar"
-        android:layout_width="371dp"
-        android:layout_height="21dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="380dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

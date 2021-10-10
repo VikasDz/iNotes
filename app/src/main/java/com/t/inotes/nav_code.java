@@ -21,12 +21,7 @@ public class nav_code extends AppCompatActivity implements View.OnClickListener 
         Button button16= findViewById(R.id.button16);
         Button button17= findViewById(R.id.button17);
         Button button18= findViewById(R.id.button18);
-        Button button19= findViewById(R.id.button19);
-        Button button20= findViewById(R.id.button20);
-        Button button21= findViewById(R.id.button21);
-        Button button22 = findViewById(R.id.button22);
-        Button button23 = findViewById(R.id.button23);
-        Button button24 = findViewById(R.id.button24);
+
 
         
         button13.setOnClickListener(this);
@@ -35,12 +30,7 @@ public class nav_code extends AppCompatActivity implements View.OnClickListener 
         button16.setOnClickListener(this);
         button17.setOnClickListener(this);
         button18.setOnClickListener(this);
-        button19.setOnClickListener(this);
-        button20.setOnClickListener(this);
-        button21.setOnClickListener(this);
-        button22.setOnClickListener(this);
-        button23.setOnClickListener(this);
-        button24.setOnClickListener(this);
+
 
     }
 
@@ -63,24 +53,6 @@ public class nav_code extends AppCompatActivity implements View.OnClickListener 
                 Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button18:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button19:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button20:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button21:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button22:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button23:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button24:
                 Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
                 break;
         }

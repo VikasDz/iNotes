@@ -117,11 +117,77 @@ public class MainActivity1 extends AppCompatActivity {
         else if (intValue == R.id.button11) {
             testpdf = (PDFView) findViewById(R.id.pdfviewer);
             //Php Notes ---------------------------------------->
-            Toast.makeText(this, "Coming Soon 😉", Toast.LENGTH_SHORT).show();
+            testpdf.fromAsset("Php.pdf")
+                    .defaultPage(0)
+                    .enableAnnotationRendering(true)
+                    .scrollHandle(new DefaultScrollHandle(this))
+                    .spacing(1)
+                    .load();
+
         }
         else if (intValue == R.id.button12) {
             testpdf = (PDFView) findViewById(R.id.pdfviewer);
             //Mongo DB Notes-------------------------->
+            testpdf.fromAsset("MongoDb.pdf")
+                    .defaultPage(0)
+                    .enableAnnotationRendering(true)
+                    .scrollHandle(new DefaultScrollHandle(this))
+                    .spacing(1)
+                    .load();
+        }
+        else if (intValue == R.id.button13) {
+            testpdf = (PDFView) findViewById(R.id.pdfviewer);
+
+            testpdf.fromAsset("MySQL.pdf")
+                    .defaultPage(0)
+                    .enableAnnotationRendering(true)
+                    .scrollHandle(new DefaultScrollHandle(this))
+                    .spacing(1)
+                    .load();
+        }
+        else if (intValue == R.id.button14) {
+            testpdf = (PDFView) findViewById(R.id.pdfviewer);
+
+            testpdf.fromAsset("FlaskNotes.pdf")
+                    .defaultPage(0)
+                    .enableAnnotationRendering(true)
+                    .scrollHandle(new DefaultScrollHandle(this))
+                    .spacing(1)
+                    .load();
+        }
+        else if (intValue == R.id.button15) {
+            testpdf = (PDFView) findViewById(R.id.pdfviewer);
+
+            testpdf.fromAsset("GitHub Notes.pdf")
+                    .defaultPage(0)
+                    .enableAnnotationRendering(true)
+                    .scrollHandle(new DefaultScrollHandle(this))
+                    .spacing(1)
+                    .load();
+        }
+        else if (intValue == R.id.button16) {
+            testpdf = (PDFView) findViewById(R.id.pdfviewer);
+
+            testpdf.fromAsset("DjangoNotes.pdf")
+                    .defaultPage(0)
+                    .enableAnnotationRendering(true)
+                    .scrollHandle(new DefaultScrollHandle(this))
+                    .spacing(1)
+                    .load();
+        }
+        else if (intValue == R.id.button17) {
+            testpdf = (PDFView) findViewById(R.id.pdfviewer);
+
+            testpdf.fromAsset("MongoDb.pdf")
+                    .defaultPage(0)
+                    .enableAnnotationRendering(true)
+                    .scrollHandle(new DefaultScrollHandle(this))
+                    .spacing(1)
+                    .load();
+        }
+        else if (intValue == R.id.button18) {
+            testpdf = (PDFView) findViewById(R.id.pdfviewer);
+
             testpdf.fromAsset("MongoDb.pdf")
                     .defaultPage(0)
                     .enableAnnotationRendering(true)

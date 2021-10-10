@@ -1,5 +1,6 @@
 package com.t.inotes;
 
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,7 +16,10 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
+import com.github.barteksc.pdfviewer.PDFView;
+import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle;
 import com.google.android.material.navigation.NavigationView;
+import com.t.inotes.databinding.ActivityMainBinding;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
@@ -26,13 +30,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import com.t.inotes.databinding.ActivityMainBinding;
+
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
+    PDFView testpdf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        setSupportActionBar(binding.appBarMain.toolbar);
+       setSupportActionBar(binding.appBarMain.toolbar);
 
 
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
@@ -83,8 +89,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         return false;
 
                     case  R.id.nav_code:
-                        Intent n1 = new Intent(MainActivity.this ,nav_code.class);
-                        startActivity(n1);
+                        String urlcode = "https://paiza.io/en";
+                        Intent i21 = new Intent(Intent.ACTION_VIEW);
+                        i21.setData(Uri.parse(urlcode));
+                        startActivity(i21);
                         return false;
 
                     case  R.id.nav_music:
@@ -93,7 +101,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         return false;
 
                     case  R.id.nav_practiceset:
-                        Toast.makeText(MainActivity.this, "We are Working On It You Will Get The Update Soon! ", Toast.LENGTH_SHORT).show();
+                        Intent pn = new Intent(MainActivity.this, practice_set.class);
+                        startActivity(pn);
+                        return false;
+
+                    case R.id.nav_sourcecode:
+                        String urls = "https://github.com/VikasDz?tab=repositories";
+                        Intent i2s = new Intent(Intent.ACTION_VIEW);
+                        i2s.setData(Uri.parse(urls));
+                        startActivity(i2s);
                         return false;
 
                     case R.id.nav_facebook:
@@ -109,18 +125,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         i3.setData(Uri.parse(urli));
                         startActivity(i3);
                         return false;
-
-                    case R.id.nav_contactus:
-                        Toast.makeText(MainActivity.this, "Error 404 😉", Toast.LENGTH_SHORT).show();
+                    case R.id.nav_github:
+                        String urlig = "https://github.com/VikasDz";
+                        Intent i31 = new Intent(Intent.ACTION_VIEW);
+                        i31.setData(Uri.parse(urlig));
+                        startActivity(i31);
                         return false;
+
+
                 }
                 return false;
 
             }
         });
-
-
-//Here We Have All Buttons------------------------------------------------------------------------------------------>
 
         Button button1 = findViewById(R.id.button1);
         Button button2 = findViewById(R.id.button2);
@@ -134,6 +151,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button10 = findViewById(R.id.button10);
         Button button11 = findViewById(R.id.button11);
         Button button12 = findViewById(R.id.button12);
+        Button button13 = findViewById(R.id.button13);
+        Button button14 = findViewById(R.id.button14);
+        Button button15 = findViewById(R.id.button15);
+        Button button16 = findViewById(R.id.button16);
+        Button button17 = findViewById(R.id.button17);
+        Button button18 = findViewById(R.id.button18);
+
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
@@ -147,12 +171,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button10.setOnClickListener(this);
         button11.setOnClickListener(this);
         button12.setOnClickListener(this);
-
-
-
-//  <------------------------------------------------------------------------------------------------------------------------------------------------------>
+        button13.setOnClickListener(this);
+        button14.setOnClickListener(this);
+        button15.setOnClickListener(this);
+        button16.setOnClickListener(this);
+        button17.setOnClickListener(this);
+        button18.setOnClickListener(this);
     }
-
 
 
 @Override
@@ -226,6 +251,36 @@ public void onClick(View v) {
             Intent intent12= new Intent(this, MainActivity1.class);
             intent12.putExtra("intVariableName", v.getId());
             startActivity(intent12);
+
+        case R.id.button13:
+            Intent intent13 = new Intent(this, MainActivity1.class);
+            intent13.putExtra("intVariableName", v.getId());
+            startActivity(intent13);
+
+        case R.id.button14:
+            Intent intent14 = new Intent(this, MainActivity1.class);
+            intent14.putExtra("intVariableName", v.getId());
+            startActivity(intent14);
+
+        case R.id.button15:
+            Intent intent15 = new Intent(this, MainActivity1.class);
+            intent15.putExtra("intVariableName", v.getId());
+            startActivity(intent15);
+
+        case R.id.button16:
+            Intent intent16 = new Intent(this, MainActivity1.class);
+            intent16.putExtra("intVariableName", v.getId());
+            startActivity(intent16);
+
+        case R.id.button17:
+            Intent intent17 = new Intent(this, MainActivity1.class);
+            intent17.putExtra("intVariableName", v.getId());
+            startActivity(intent17);
+
+        case R.id.button18:
+            Intent intent18= new Intent(this, MainActivity1.class);
+            intent18.putExtra("intVariableName", v.getId());
+            startActivity(intent18);
 
     }
 }
