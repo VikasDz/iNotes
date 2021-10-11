@@ -20,11 +20,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".singleset"
-            android:exported="true"
-            android:label="Problem Set 🤔"
-            android:parentActivityName=".practice_set" />
-        <activity
             android:name=".practice_set"
             android:exported="true"
             android:label="Practice Sets 👩‍💻"
