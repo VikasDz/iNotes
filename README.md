@@ -1,6 +1,6 @@
 #Android app where user can learn or get different types of programming language notes.
-#In This app user have right to listen music when they are feeling low.
-#iNote app build in Java language.
+In This app user have right to listen music when they are feeling low.
+iNote app build in Java language.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 <h1>
 Some Picture Of iNotes ✌ </h1>
