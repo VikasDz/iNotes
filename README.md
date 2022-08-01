@@ -1,5 +1,6 @@
-A Aamazing Android Project We Called It iNotes App.
-In This App You Can Learn Many Computer Language By The Help Of My Ebook & Here We Also Include a Music Player Where You Can Listen Music.. ❤
+#Android app where user can learn or get different types of programming language notes.
+#In This app user have right to listen music when they are feeling low.
+#iNote app build in Java language.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 <h1>
 Some Picture Of iNotes ✌ </h1>
