@@ -32,6 +32,7 @@ public class playmusic extends AppCompatActivity {
     int position;
     SeekBar seekBar;
     Thread updateSeek;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

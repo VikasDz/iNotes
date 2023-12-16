@@ -22,11 +22,19 @@
             android:icon="@drawable/ic_baseline_question_answer_24"
             android:title="Practice Set" />
         <item
+            android:id="@+id/nav_quiz"
+            android:icon="@drawable/baseline_quiz_24"
+            android:title="Take Quiz" />
+        <item
+            android:id="@+id/nav_compiler"
+            android:icon="@drawable/ic_baseline_code_24"
+            android:title="Compiler" />
+        <item
             android:id="@+id/sharebtn"
             android:icon="@drawable/ic_baseline_share_24"
             android:title="@string/share" />
     </group>
-    <item android:title="Contact Us">
+    <item android:title="Developer Contact">
         <menu>
             <item
                 android:id="@+id/nav_facebook"
