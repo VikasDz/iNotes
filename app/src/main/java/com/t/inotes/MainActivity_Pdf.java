@@ -9,7 +9,7 @@ import android.widget.Toast;
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle;
 
-public class MainActivity1 extends AppCompatActivity {
+public class MainActivity_Pdf extends AppCompatActivity {
     PDFView testpdf;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

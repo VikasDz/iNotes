@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,30 +12,44 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.INotes">
         <activity
-            android:name=".nav_code"
+            android:name=".Activity_Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Activity_Reg"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Activity_SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_NavBar"
             android:label="Source Code 🔥"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".playmusic"
+            android:name=".Activity_PlayMusic"
             android:label="iMusic 🎶❤"
-            android:parentActivityName=".music" />
+            android:parentActivityName=".Activity_Music" />
         <activity
-            android:name=".music"
+            android:name=".Activity_Music"
             android:label="iMusic 🎶"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".MainActivity1"
+            android:name=".MainActivity_Pdf"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.INotes.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/Theme.INotes.NoActionBar" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

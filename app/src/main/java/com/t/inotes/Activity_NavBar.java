@@ -2,13 +2,12 @@ package com.t.inotes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class nav_code extends AppCompatActivity implements View.OnClickListener {
+public class Activity_NavBar extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -15,7 +15,7 @@ import android.widget.TextView;
 import java.io.File;
 import java.util.ArrayList;
 
-public class playmusic extends AppCompatActivity {
+public class Activity_PlayMusic extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();

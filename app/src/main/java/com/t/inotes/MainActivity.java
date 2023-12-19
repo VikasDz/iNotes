@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
-import android.os.Handler;
-import android.text.Layout;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
@@ -71,10 +69,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        NavigationUI.setupWithNavController(navigationView, navController);
 
         navigationView =findViewById(R.id.nav_view);
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
+                    case R.id.nav_login:
+                        Intent nlogin = new Intent(MainActivity.this , Activity_Login.class);
+                        startActivity(nlogin);
+                        overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
+                        return false;
+
                     case R.id.sharebtn:
                         Intent sendIntent = new Intent();
                         sendIntent.setAction(Intent.ACTION_SEND);
@@ -82,20 +87,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 "Hey Check Out iNotes 🔥" + "https://drive.google.com/drive/u/3/folders/18t67PfuoPi-5FPa6nTDmnW3zW_swq2bo");
                         sendIntent.setType("text/plain");
                         startActivity(sendIntent);
+                        overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                         return false;
 
                     case  R.id.nav_code:
-                        Intent n1 = new Intent(MainActivity.this ,nav_code.class);
+                        Intent n1 = new Intent(MainActivity.this , Activity_NavBar.class);
                         startActivity(n1);
+                        overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                         return false;
 
                     case  R.id.nav_music:
-                        Intent n = new Intent(MainActivity.this ,music.class);
+                        Intent n = new Intent(MainActivity.this , Activity_Music.class);
                         startActivity(n);
+                        overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                         return false;
 
                     case  R.id.nav_practiceset:
                         Toast.makeText(MainActivity.this, "We are Working On It You Will Get The Update Soon! ", Toast.LENGTH_SHORT).show();
+                        overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                         return false;
 
                     case R.id.nav_facebook:
@@ -175,57 +184,57 @@ return NavigationUI.navigateUp(navController, mAppBarConfiguration)
 public void onClick(View v) {
     switch (v.getId()) {
         case R.id.button1:
-            Intent intent1 = new Intent(this, MainActivity1.class);
+            Intent intent1 = new Intent(this, MainActivity_Pdf.class);
             intent1.putExtra("intVariableName", v.getId());
             startActivity(intent1);
         case R.id.button2:
-            Intent intent2 = new Intent(this, MainActivity1.class);
+            Intent intent2 = new Intent(this, MainActivity_Pdf.class);
             intent2.putExtra("intVariableName", v.getId());
             startActivity(intent2);
         case R.id.button3:
-            Intent intent3 = new Intent(this, MainActivity1.class);
+            Intent intent3 = new Intent(this, MainActivity_Pdf.class);
             intent3.putExtra("intVariableName", v.getId());
             startActivity(intent3);
         case R.id.button4:
-            Intent intent4 = new Intent(this, MainActivity1.class);
+            Intent intent4 = new Intent(this, MainActivity_Pdf.class);
             intent4.putExtra("intVariableName", v.getId());
             startActivity(intent4);
         case R.id.button5:
-            Intent intent5 = new Intent(this, MainActivity1.class);
+            Intent intent5 = new Intent(this, MainActivity_Pdf.class);
             intent5.putExtra("intVariableName", v.getId());
             startActivity(intent5);
         case R.id.button6:
-            Intent intent6 = new Intent(this, MainActivity1.class);
+            Intent intent6 = new Intent(this, MainActivity_Pdf.class);
             intent6.putExtra("intVariableName", v.getId());
             startActivity(intent6);
 
         case R.id.button7:
-            Intent intent7 = new Intent(this, MainActivity1.class);
+            Intent intent7 = new Intent(this, MainActivity_Pdf.class);
             intent7.putExtra("intVariableName", v.getId());
             startActivity(intent7);
 
         case R.id.button8:
-            Intent intent8 = new Intent(this, MainActivity1.class);
+            Intent intent8 = new Intent(this, MainActivity_Pdf.class);
             intent8.putExtra("intVariableName", v.getId());
             startActivity(intent8);
 
         case R.id.button9:
-            Intent intent9 = new Intent(this, MainActivity1.class);
+            Intent intent9 = new Intent(this, MainActivity_Pdf.class);
             intent9.putExtra("intVariableName", v.getId());
             startActivity(intent9);
 
         case R.id.button10:
-            Intent intent10 = new Intent(this, MainActivity1.class);
+            Intent intent10 = new Intent(this, MainActivity_Pdf.class);
             intent10.putExtra("intVariableName", v.getId());
             startActivity(intent10);
 
         case R.id.button11:
-            Intent intent11 = new Intent(this, MainActivity1.class);
+            Intent intent11 = new Intent(this, MainActivity_Pdf.class);
             intent11.putExtra("intVariableName", v.getId());
             startActivity(intent11);
 
         case R.id.button12:
-            Intent intent12= new Intent(this, MainActivity1.class);
+            Intent intent12= new Intent(this, MainActivity_Pdf.class);
             intent12.putExtra("intVariableName", v.getId());
             startActivity(intent12);
 

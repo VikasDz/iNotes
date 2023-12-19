@@ -5,6 +5,10 @@
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/baseline_arrow_forward_24"
+            android:title="Login" />
+        <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_baseline_home_24"
             android:title="@string/menu_home" />
@@ -29,6 +33,8 @@
             android:id="@+id/nav_compiler"
             android:icon="@drawable/ic_baseline_code_24"
             android:title="Compiler" />
+
+
         <item
             android:id="@+id/sharebtn"
             android:icon="@drawable/ic_baseline_share_24"

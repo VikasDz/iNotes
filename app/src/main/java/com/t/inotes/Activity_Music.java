@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
@@ -22,7 +21,7 @@ import com.karumi.dexter.listener.single.PermissionListener;
 import java.io.File;
 import java.util.ArrayList;
 
-public class music extends AppCompatActivity {
+public class Activity_Music extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,12 +42,12 @@ public class music extends AppCompatActivity {
                             items[i] = mySongs.get(i).getName().replace(".mp3", "");
                         }      
 
-                        ArrayAdapter<String> adapter = new ArrayAdapter<String>(music.this, android.R.layout.simple_list_item_1, items);
+                        ArrayAdapter<String> adapter = new ArrayAdapter<String>(Activity_Music.this, android.R.layout.simple_list_item_1, items);
                         listView.setAdapter(adapter);
                         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                Intent intent = new Intent(music.this, playmusic.class);
+                                Intent intent = new Intent(Activity_Music.this, Activity_PlayMusic.class);
                                 String currentSong = listView.getItemAtPosition(position).toString();
                                 intent.putExtra("songList", mySongs);
                                 intent.putExtra("currentSong", currentSong);
