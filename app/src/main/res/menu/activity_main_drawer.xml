@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_login"
-            android:icon="@drawable/baseline_arrow_forward_24"
+            android:icon="@drawable/user"
             android:title="Login" />
         <item
             android:id="@+id/nav_home"
@@ -22,16 +22,12 @@
             android:icon="@drawable/ic_baseline_code_24"
             android:title="Source Code" />
         <item
-            android:id="@+id/nav_practiceset"
-            android:icon="@drawable/ic_baseline_question_answer_24"
-            android:title="Practice Set" />
-        <item
             android:id="@+id/nav_quiz"
             android:icon="@drawable/baseline_quiz_24"
             android:title="Take Quiz" />
         <item
             android:id="@+id/nav_compiler"
-            android:icon="@drawable/ic_baseline_code_24"
+            android:icon="@drawable/compiler"
             android:title="Compiler" />
 
 

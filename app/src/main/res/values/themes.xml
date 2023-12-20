@@ -15,6 +15,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="ListFont" parent="@android:style/Widget.ListView">
+        <item name="android:textColor">#F6F1F1</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
 
     <style name="Theme.INotes.NoActionBar">
         <item name="windowActionBar">false</item>

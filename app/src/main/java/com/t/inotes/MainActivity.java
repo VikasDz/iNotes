@@ -101,14 +101,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         startActivity(n);
                         overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                         return false;
-
-                    case  R.id.nav_practiceset:
-                        Toast.makeText(MainActivity.this, "We are Working On It You Will Get The Update Soon! ", Toast.LENGTH_SHORT).show();
+                        
+                    case  R.id.nav_quiz:
+                        Intent nq = new Intent(MainActivity.this , Activity_MainQuiz.class);
+                        startActivity(nq);
                         overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                         return false;
 
+
                     case R.id.nav_facebook:
-                        String urlf = "https://www.facebook.com/satya.py0/";
+                        String urlf = "https://imvikash.in/";
                         Intent i2 = new Intent(Intent.ACTION_VIEW);
                         i2.setData(Uri.parse(urlf));
                         startActivity(i2);
@@ -186,56 +188,68 @@ public void onClick(View v) {
         case R.id.button1:
             Intent intent1 = new Intent(this, MainActivity_Pdf.class);
             intent1.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent1);
         case R.id.button2:
             Intent intent2 = new Intent(this, MainActivity_Pdf.class);
             intent2.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent2);
         case R.id.button3:
             Intent intent3 = new Intent(this, MainActivity_Pdf.class);
             intent3.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent3);
         case R.id.button4:
             Intent intent4 = new Intent(this, MainActivity_Pdf.class);
             intent4.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent4);
         case R.id.button5:
             Intent intent5 = new Intent(this, MainActivity_Pdf.class);
             intent5.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent5);
         case R.id.button6:
             Intent intent6 = new Intent(this, MainActivity_Pdf.class);
             intent6.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent6);
 
         case R.id.button7:
             Intent intent7 = new Intent(this, MainActivity_Pdf.class);
             intent7.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent7);
 
         case R.id.button8:
             Intent intent8 = new Intent(this, MainActivity_Pdf.class);
             intent8.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent8);
 
         case R.id.button9:
             Intent intent9 = new Intent(this, MainActivity_Pdf.class);
             intent9.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent9);
 
         case R.id.button10:
             Intent intent10 = new Intent(this, MainActivity_Pdf.class);
             intent10.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent10);
 
         case R.id.button11:
             Intent intent11 = new Intent(this, MainActivity_Pdf.class);
             intent11.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent11);
 
         case R.id.button12:
             Intent intent12= new Intent(this, MainActivity_Pdf.class);
             intent12.putExtra("intVariableName", v.getId());
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             startActivity(intent12);
 
     }

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,21 +12,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.INotes">
         <activity
-            android:name=".Activity_Login"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".Activity_Info"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".Activity_Reg"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".Activity_Compiler"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".Main_Level"
+            android:exported="false"
+            android:label="Choose Level 🎚"
+            android:parentActivityName=".Activity_MainQuiz" />
+        <activity
+            android:name=".Activity_MainQuiz"
+            android:exported="true"
+            android:label="Take Quiz ❔"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activity_Login"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity_Reg"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Activity_SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
