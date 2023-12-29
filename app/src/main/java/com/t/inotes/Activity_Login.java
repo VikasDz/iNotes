@@ -51,8 +51,7 @@ public class Activity_Login extends AppCompatActivity {
         btn_skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent n1 = new Intent(Activity_Login.this ,MainActivity.class);
-                startActivity(n1);
+                Toast.makeText(Activity_Login.this, "Please Login :)", Toast.LENGTH_SHORT).show();
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             }
         });

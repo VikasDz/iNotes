@@ -25,6 +25,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.t.inotes.databinding.ActivityMainBinding;
 
 
@@ -32,10 +34,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+    private FirebaseAuth mAuth;
+    private FirebaseUser mCurrentUser;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mAuth = FirebaseAuth.getInstance();
+        mCurrentUser = mAuth.getCurrentUser();
+
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
@@ -74,9 +81,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
-                    case R.id.nav_login:
-                        Intent nlogin = new Intent(MainActivity.this , Activity_Login.class);
-                        startActivity(nlogin);
+                    case R.id.login_out:
+                        mAuth.signOut();
+                        sendUserToLogin();
                         overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                         return false;
 
@@ -87,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 "Hey Check Out iNotes 🔥" + "https://drive.google.com/drive/u/3/folders/18t67PfuoPi-5FPa6nTDmnW3zW_swq2bo");
                         sendIntent.setType("text/plain");
                         startActivity(sendIntent);
-                        overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
+
                         return false;
 
                     case  R.id.nav_code:
@@ -166,9 +173,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //  <------------------------------------------------------------------------------------------------------------------------------------------------------>
     }
 
+    private void sendUserToLogin() {
+        Intent loginIntent = new Intent(MainActivity.this, Activity_Login.class);
+        loginIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        loginIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(loginIntent);
+        finish();
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(mCurrentUser == null){
+            sendUserToLogin();
+        }
+    }
 
 
-@Override
+    @Override
 public boolean onCreateOptionsMenu(Menu menu) {
 // Inflate the menu; this adds items to the action bar if it is present.
 getMenuInflater().inflate(R.menu.main, menu);

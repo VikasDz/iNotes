@@ -4,10 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_login"
-            android:icon="@drawable/user"
-            android:title="Login" />
+
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_baseline_home_24"
@@ -35,6 +32,10 @@
             android:id="@+id/sharebtn"
             android:icon="@drawable/ic_baseline_share_24"
             android:title="@string/share" />
+        <item
+            android:id="@+id/login_out"
+            android:icon="@drawable/baseline_arrow_forward_24"
+            android:title="Log Out" />
     </group>
     <item android:title="Developer Contact">
         <menu>
