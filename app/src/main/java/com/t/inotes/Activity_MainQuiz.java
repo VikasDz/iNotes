@@ -94,5 +94,6 @@ public class Activity_MainQuiz extends AppCompatActivity implements View.OnClick
 
 
         }
+
     }
 }

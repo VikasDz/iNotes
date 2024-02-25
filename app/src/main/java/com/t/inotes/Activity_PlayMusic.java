@@ -106,6 +106,7 @@ public class Activity_PlayMusic extends AppCompatActivity {
                     mediaPlayer.start();
                 }
 
+
             }
         });
 
@@ -127,6 +128,7 @@ public class Activity_PlayMusic extends AppCompatActivity {
                 seekBar.setMax(mediaPlayer.getDuration());
                 textContent = songs.get(position).getName().toString();
                 textView.setText(textContent);
+
             }
         });
 

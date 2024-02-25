@@ -114,6 +114,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         startActivity(nq);
                         overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                         return false;
+                    case  R.id.nav_compiler:
+                        Intent nc = new Intent(MainActivity.this , Activity_Compiler.class);
+                        startActivity(nc);
+                        overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
+                        return false;
 
 
                     case R.id.nav_facebook:

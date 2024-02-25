@@ -53,12 +53,14 @@ public class Activity_Login extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(Activity_Login.this, "Please Login :)", Toast.LENGTH_SHORT).show();
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
+
             }
         });
         btn_signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onLogInUser();
+
             }
         });
 
@@ -66,6 +68,7 @@ public class Activity_Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 goToRegisterActivity();
+
             }
         });
 
@@ -73,6 +76,7 @@ public class Activity_Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 forgotYourPassword();
+
             }
         });
 

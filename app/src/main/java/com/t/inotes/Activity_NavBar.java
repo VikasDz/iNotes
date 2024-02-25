@@ -2,6 +2,8 @@ package com.t.inotes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,41 +49,99 @@ public class Activity_NavBar extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button13:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String urlf = "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i1 = new Intent(Intent.ACTION_VIEW);
+                i1.setData(Uri.parse(urlf));
+                startActivity(i1);
                 break;
+
             case R.id.button14:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String url2 = "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i2 = new Intent(Intent.ACTION_VIEW);
+                i2.setData(Uri.parse(url2));
+                startActivity(i2);
                 break;
+
+
             case R.id.button15:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String url3 = "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i3 = new Intent(Intent.ACTION_VIEW);
+                i3.setData(Uri.parse(url3));
+                startActivity(i3);
                 break;
+
             case R.id.button16:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String url4 = "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i4 = new Intent(Intent.ACTION_VIEW);
+                i4.setData(Uri.parse(url4));
+                startActivity(i4);
                 break;
+
+
+
             case R.id.button17:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String url5 = "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i5 = new Intent(Intent.ACTION_VIEW);
+                i5.setData(Uri.parse(url5));
+                startActivity(i5);
                 break;
+
+
             case R.id.button18:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String url18 = "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i18 = new Intent(Intent.ACTION_VIEW);
+                i18.setData(Uri.parse(url18));
+                startActivity(i18);
                 break;
+
+
             case R.id.button19:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String url19= "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i19 = new Intent(Intent.ACTION_VIEW);
+                i19.setData(Uri.parse(url19));
+                startActivity(i19);
                 break;
+
             case R.id.button20:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String url20 = "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i20 = new Intent(Intent.ACTION_VIEW);
+                i20.setData(Uri.parse(url20));
+                startActivity(i20);
                 break;
+
+
             case R.id.button21:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String url21 = "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i21 = new Intent(Intent.ACTION_VIEW);
+                i21.setData(Uri.parse(url21));
+                startActivity(i21);
                 break;
+
+
             case R.id.button22:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String url22 = "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i22 = new Intent(Intent.ACTION_VIEW);
+                i22.setData(Uri.parse(url22));
+                startActivity(i22);
                 break;
+
+
             case R.id.button23:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String url23 = "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i23 = new Intent(Intent.ACTION_VIEW);
+                i23.setData(Uri.parse(url23));
+                startActivity(i23);
                 break;
+
+
             case R.id.button24:
-                Toast.makeText(this, "Wait For It ", Toast.LENGTH_SHORT).show();
+                String url24 = "https://drive.google.com/drive/folders/1aMr-_-EBtLlhqDI42rjOo6SWlli-86ix?usp=sharing";
+                Intent i24 = new Intent(Intent.ACTION_VIEW);
+                i24.setData(Uri.parse(url24));
+                startActivity(i24);
                 break;
+
+
         }
 
     }
