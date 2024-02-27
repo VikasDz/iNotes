@@ -12,15 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.INotes">
         <activity
+            android:name=".TestPage"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+        <activity
             android:name=".Activity_Info"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Activity_Compiler"
-            android:label="Java Compiler 💻"
             android:exported="true"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:label="Java Compiler 💻"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Main_Level"
             android:exported="false"
@@ -45,6 +47,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

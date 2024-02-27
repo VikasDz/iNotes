@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="webview" type="id" />
+    <item name="level1" type="id"/>
+    <item name="level2" type="id"/>
+    <item name="level3" type="id"/>
+</resources>

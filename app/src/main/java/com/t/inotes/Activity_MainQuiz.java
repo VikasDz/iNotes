@@ -44,50 +44,50 @@ public class Activity_MainQuiz extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.qbutton1:
-                Intent intent1q = new Intent(this, Main_Level.class);
+                Intent intent1q = new Intent(this, TestPage.class);
                 intent1q.putExtra("intVariableName", v.getId());
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                 startActivity(intent1q);
             case R.id.qbutton2:
-                Intent intent2q = new Intent(this, Main_Level.class);
+                Intent intent2q = new Intent(this, TestPage.class);
                 intent2q.putExtra("intVariableName", v.getId());
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                 startActivity(intent2q);
             case R.id.qbutton3:
-                Intent intent3q = new Intent(this, Main_Level.class);
+                Intent intent3q = new Intent(this, TestPage.class);
                 intent3q.putExtra("intVariableName", v.getId());
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                 startActivity(intent3q);
             case R.id.qbutton4:
-                Intent intent4q = new Intent(this, Main_Level.class);
+                Intent intent4q = new Intent(this, TestPage.class);
                 intent4q.putExtra("intVariableName", v.getId());
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                 startActivity(intent4q);
             case R.id.qbutton5:
-                Intent intent5q = new Intent(this, Main_Level.class);
+                Intent intent5q = new Intent(this, TestPage.class);
                 intent5q.putExtra("intVariableName", v.getId());
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                 startActivity(intent5q);
             case R.id.qbutton6:
-                Intent intent6q = new Intent(this, Main_Level.class);
+                Intent intent6q = new Intent(this, TestPage.class);
                 intent6q.putExtra("intVariableName", v.getId());
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                 startActivity(intent6q);
 
             case R.id.qbutton7:
-                Intent intent7q = new Intent(this, Main_Level.class);
+                Intent intent7q = new Intent(this, TestPage.class);
                 intent7q.putExtra("intVariableName", v.getId());
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                 startActivity(intent7q);
 
             case R.id.qbutton8:
-                Intent intent8q = new Intent(this, Main_Level.class);
+                Intent intent8q = new Intent(this, TestPage.class);
                 intent8q.putExtra("intVariableName", v.getId());
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                 startActivity(intent8q);
 
             case R.id.qbutton9:
-                Intent intent9q = new Intent(this, Main_Level.class);
+                Intent intent9q = new Intent(this, TestPage.class);
                 intent9q.putExtra("intVariableName", v.getId());
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                 startActivity(intent9q);
